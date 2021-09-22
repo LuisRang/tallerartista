@@ -1,0 +1,193 @@
+body {
+  background-color: black;
+  margin: 60px 200px 0px 200px ;
+  font-family: 'Rajdhani', sans-serif;
+  
+  
+}
+
+.logo {
+  display: block;
+  /*primer valor arriba/abajo; seegundo izquierda derecha*/
+  /* sin unidad se toma como pixeles*/
+  margin:0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+nav {
+    background-color: black;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.barraNavegacion {
+    /*alinear horizontal*/
+    display: inline-flex;
+    /*quitar viñetas*/
+    list-style: none;
+    margin: 0;
+    padding:0;
+    font-family: 'Kaisei HarunoUmi', serif;
+    
+}
+
+.navegacion {
+    padding: 10px 60px 10px 60px;
+}
+
+.navegacion:hover {
+    background-color:rgb(139, 187, 235);
+ 
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* parallax parte uno */
+.parallax {
+    background-image: url(../imagenes/Mihai_para.jpg);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajaparallax {
+    margin:0 auto;
+}
+
+div.tituloparallax h2 {
+    font-size: 50px;
+    color:blanchedalmond;
+    font-weight: bold;
+    /* margin: 0 auto;
+    text-align: center; */
+    
+    
+}
+
+.parrafoparallax {
+    border: 3px solid whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.parrafoparallax:hover {
+    background-color: rgb(139, 187, 235);
+    opacity:0.6 ;
+}
+
+.parrafoparallax a{
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 400;
+    text-decoration: none;
+    margin:0;
+    padding: 10px 30px;
+
+}
+
+/* div.informacion {
+    color:rgb(255, 255, 255);
+    justify-content: center;
+} */
+    
+.informacion {
+    display:inline-flex;
+}
+
+.informacion p{
+    color:rgb(255, 255, 255);
+    max-width: 50%;
+    margin:0;
+    align-self: center;
+    padding-left: 50px;
+    line-height: 20px;
+}
+
+/* .discos {
+    color:rgb(255, 255, 255);
+    max-width: 50%;
+    margin:0;
+    align-self: center;
+    padding-left: 50px;
+} */
+
+.contentmusic {
+   font-family: 'Rajdhani', sans-serif ;
+   letter-spacing: 4px;
+   line-height: 2px;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contentmusic h2{
+    margin:40px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.container .card {
+    width: 450px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: blanchedalmond 0 2px 2px ;
+    /* si la imegen se desborda oculata los sobrante  */
+    overflow: hidden;
+    margin: 0 10px;
+    text-align: center;
+    /* animacion css */
+    transition: all 0.25s;
+}
+
+.container .card img {
+    width: 350px;
+    height: 350px;
+   margin-right: auto;
+   padding: 0;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: blanchedalmond 0 12px 12px ;
+
+}
+
+.container .card h4{
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+.container .card p{
+    padding:0 1rem;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: cornflowerblue;
+}
